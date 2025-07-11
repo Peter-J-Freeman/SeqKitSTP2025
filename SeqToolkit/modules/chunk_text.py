@@ -30,3 +30,4 @@ if __name__ == "__main__":
     string = "aggagtaagcccttgcaactggaaatacacccattg"
     chunk_length = 5
     print(chunk_string(string, chunk_length))
+    # I want to add more comments because I want to be a better programmer
