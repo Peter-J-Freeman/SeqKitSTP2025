@@ -1,46 +1,46 @@
-// Jenkins Pipeline Script (Groovy syntax)
-// This file defines a CI pipeline using Jenkins Declarative Pipeline syntax.
-// It uses Conda to create and activate the Python environment,
-// installs your package with pip, then runs tests with pytest.
+// Jenkinsfile
+// Language: Groovy (Declarative Pipeline)
+// This file defines a CI pipeline using Jenkins.
+// It checks out the repo, sets up a Conda environment, installs the Python package, and runs tests.
 
 pipeline {
-    agent any  // Use any available Jenkins agent/node to run the pipeline
+    agent any  // Run on any available Jenkins agent
 
     environment {
         // Path to Conda installation on the Jenkins machine
         CONDA_PREFIX = '/opt/miniconda3'
 
-        // Name of the Conda environment to create and activate
+        // Name of the Conda environment to create
         CONDA_ENV_NAME = 'seqkit'
 
-        // Python pip environment variables to disable version checks and enable unbuffered output
+        // Disable pip version check and make Python output unbuffered
         PIP_DISABLE_PIP_VERSION_CHECK = '1'
         PYTHONUNBUFFERED = '1'
     }
 
     stages {
-
         stage('Checkout') {
             steps {
-                // Check out the source code from your SCM (e.g., GitHub)
+                // Get the source code from the Git repository
                 checkout scm
             }
         }
 
         stage('Setup Conda Environment') {
             steps {
-                // Create or recreate the Conda environment based on environment.yml
+                // Create Conda environment from environment.yml
+                // Remove any existing environment with the same name first
                 sh '''
                 source ${CONDA_PREFIX}/etc/profile.d/conda.sh
-                conda env remove -n ${CONDA_ENV_NAME} || true  // Remove env if it exists to start fresh
-                conda env create -f environment.yml            // Create env from your environment.yml file
+                conda env remove -n ${CONDA_ENV_NAME} || true
+                conda env create -f environment.yml
                 '''
             }
         }
 
         stage('Install Package') {
             steps {
-                // Activate the Conda environment and install your Python package with pip
+                // Activate environment and install current project
                 sh '''
                 source ${CONDA_PREFIX}/etc/profile.d/conda.sh
                 conda activate ${CONDA_ENV_NAME}
@@ -51,7 +51,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                // Activate the Conda environment and run your test suite using pytest
+                // Run the test suite using pytest
                 sh '''
                 source ${CONDA_PREFIX}/etc/profile.d/conda.sh
                 conda activate ${CONDA_ENV_NAME}
@@ -63,7 +63,7 @@ pipeline {
 
     post {
         always {
-            // Runs regardless of build success/failure
+            // Display a message whether the pipeline succeeded or failed
             echo 'CI pipeline finished.'
         }
     }
