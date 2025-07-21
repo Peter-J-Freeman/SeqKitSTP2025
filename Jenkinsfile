@@ -55,7 +55,7 @@ pipeline {
                 sh '''
                 source ${CONDA_PREFIX}/etc/profile.d/conda.sh
                 conda activate ${CONDA_ENV_NAME}
-                pytest tests/
+                pytest --cov=SeqToolkit tests/
                 '''
             }
         }

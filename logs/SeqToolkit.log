@@ -15,3 +15,5 @@
 2025-07-11 13:29:25,313 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
 2025-07-11 13:30:33,030 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
 2025-07-15 08:48:12,550 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-07-21 12:28:45,179 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-07-21 12:30:52,616 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
