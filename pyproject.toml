@@ -19,9 +19,19 @@ classifiers = [
     "Programming Language :: Python :: 3.11"
 ]
 
-# Dynamically load dependencies
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
+# Load dependencies
+dependencies = [
+  "coverage==7.9.2",
+  "iniconfig==2.1.0",
+  "packaging==25.0",
+  "pluggy==1.6.0",
+  "Pygments==2.19.2",
+  "pytest==8.4.1",
+  "pytest-cov==6.2.1",
+  "setuptools==80.9.0",
+  "wheel==0.45.1",
+]
+
 
 [tool.setuptools_scm]
 

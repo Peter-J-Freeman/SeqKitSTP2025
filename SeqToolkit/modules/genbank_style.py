@@ -1,5 +1,5 @@
 # Import modules
-from SeqToolkit.loger import logger
+from SeqToolkit.logger import logger
 
 def create_genbank_style(chunk_list):
     counter = 0       # Keeps track of total base count, used for the GenBank-style line prefix
