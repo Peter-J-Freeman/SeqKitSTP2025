@@ -1,5 +1,5 @@
 # Import modules
-from SeqToolkit.loger import logger
+from SeqToolkit.logger import logger
 
 
 def chunk_string(query_sequence, chunk_by):
@@ -95,7 +95,7 @@ if __name__ == "__main__":
     chunk_list = chunk_string_to_blocks(string2, chunk_length, block_length)
     print(chunk_list)
 # Import modules
-from SeqToolkit.loger import logger
+from SeqToolkit.logger import logger
 
 def chunk_string(query_sequence, chuk_by):
     """
