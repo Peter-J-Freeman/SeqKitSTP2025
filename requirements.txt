@@ -5,6 +5,6 @@ pluggy==1.6.0
 Pygments==2.19.2
 pytest==8.4.1
 pytest-cov==6.2.1
--e git+https://github.com/Peter-J-Freeman/SeqKitSTP2025.git@da482d249917bdc351ea36a7c9e7a6bab27df99a#egg=SeqToolkit
+SeqToolkit @ file:///Users/user/.jenkins/workspace/SeqKitSTP2025-CI_PR-4
 setuptools==80.9.0
 wheel==0.45.1

@@ -17,3 +17,15 @@
 2025-07-15 08:48:12,550 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
 2025-07-21 12:28:45,179 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
 2025-07-21 12:30:52,616 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 09:55:39,016 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:47:16,584 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:47:37,869 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:48:18,730 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:48:50,589 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:48:51,974 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:49:00,882 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:49:38,952 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:49:50,278 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:50:12,002 [ERROR] Chunk aggagtaagcccttgcaactggaaatacacccattg failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:52:01,396 [ERROR] Chunking failed with exception: slice indices must be integers or None or have an __index__ method
+2025-08-01 11:53:59,512 [ERROR] Chunking failed with exception: slice indices must be integers or None or have an __index__ method
