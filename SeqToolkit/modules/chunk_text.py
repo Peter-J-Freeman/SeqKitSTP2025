@@ -1,4 +1,4 @@
-# Import modules
+# Import these modules
 from SeqToolkit.logger import logger
 
 
