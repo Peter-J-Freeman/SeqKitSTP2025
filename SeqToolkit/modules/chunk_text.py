@@ -1,4 +1,4 @@
-# Import modules
+# Import these modules
 from SeqToolkit.logger import logger
 
 
@@ -66,31 +66,3 @@ def chunk_string_to_blocks(query_sequence, chunk_by, num_blocks, return_lowercas
         raise
 
     return full_list
-
-
-# Run this block if the script is executed directly (not imported as a module)
-if __name__ == "__main__":
-    # Example DNA sequence
-    string = "aggagtaagcccttgcaactggaaatacacccattg"
-    chunk_length = 5  # Desired chunk length
-    print(" ".join(chunk_string(string, chunk_length)))
-
-    # Multiline DNA string (e.g., from FASTA or GenBank)
-    string2 = """\
-    GCTGAGACTTCCTGGACGGGGGACAGGCTGTGGGGTTTCTCAGATAACTGGGCCCCTGCGCTCAGGAGGC
-    CTTCACCCTCTGCTCTGGGTAAAGTTCATTGGAACAGAAAGAAATGGATTTATCTGCTCTTCGCGTTGAA
-    GAAGTACAAAATGTCATTAATGCTATGCAGAAAATCTTAGAGTGTCCCATCTGTCTGGAGTTGATCAAGG
-    AACCTGTCTCCACAAAGTGTGACCACATATTTTGCAAATTTTGCATGCTGAAACTTCTCAACCAGAAGAA
-    AGGGCCTTCACAGTGTCCTTTATGTAAGAATGATATAACCAAAAGGAGCCTACAAGAAAGTACGAGATTT
-    AGTCAACTTGTTGAAGAGCTATTGAAAATCATTTGTGCTTTTCAGCTTGACACAGGTTTGGAGTATGCAA
-    ACAGCTATAATTTTGCAAAAAAGGAAAATAACTCTCCTGAACATCTAAAAGATGAAGTTTCTATCATCCA
-    AAGTATGGGCTACAGAAACCGTGCCAAAAGACTTCTACAGAGTGAACCCGAAAATCCTTCCTTGCAGGAA
-    ACCAGTCTCAGTGTCCAACTCTCTAACCTTGGAACTGTGAGAACTCTGAGGACAAAGCAGCGGATACAAC
-    CTCAAAAGACGTCTGTCTACATTGAATTGGGATCTGATTCTTCTGAAGATACCGTTAATAAGGCAACTTA
-    TTGCAGTGTGGGAGATCAAGTAAATAAAAAAAAAAAA"""
-
-    chunk_length = 10   # Length of each chunk
-    block_length = 6    # Number of chunks per line
-
-    chunk_list = chunk_string_to_blocks(string2, chunk_length, block_length)
-    print(chunk_list)
